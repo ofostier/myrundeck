@@ -1,0 +1,30 @@
+<joblist>
+  <job>
+    <defaultTab>nodes</defaultTab>
+    <description><![CDATA[Job Rundeck AWS 
+power user test ok
+Run rabbit]]></description>
+    <executionEnabled>true</executionEnabled>
+    <group>AWS/Python</group>
+    <id>22fd67fe-c45b-4742-b01c-1c1f69945e9e</id>
+    <loglevel>INFO</loglevel>
+    <name>AWS_CloudPratitioner_training_slack</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <plugins />
+    <schedule>
+      <month month='*' />
+      <time hour='10,14,16' minute='5' seconds='0' />
+      <weekday day='*' />
+      <year year='*' />
+    </schedule>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <description>Sending to Slack registered users</description>
+        <exec>python3 /Users/131562/python_project/aws-slack/aws_training_slack.py</exec>
+      </command>
+    </sequence>
+    <timeZone>Europe/Paris</timeZone>
+    <uuid>22fd67fe-c45b-4742-b01c-1c1f69945e9e</uuid>
+  </job>
+</joblist>
